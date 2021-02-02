@@ -9,10 +9,9 @@ function PokemonContainer() {
     });
 
     return(
-        <section>
+        <div className="pokemon-container">
             {pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)}
-
-        </section>
+        </div>
     )
 }
 
